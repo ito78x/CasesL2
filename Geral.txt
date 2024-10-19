@@ -1,6 +1,0 @@
-Requisitos Obrigatórios:
-1 - Página que mostre os cases cadastrados.
-2 - Admin para Cadastro de Cases em Drupal
-Os cases devem conter (Imagem, título e descrição)
-3 - Criar uma API com swagger.
-4 - Enviar o código fonte via link do repositório do github pronto para rodar com docker, preferencialmente havendo um docker-compose para subir uma instância para aplicação e outra para o banco de dados.
