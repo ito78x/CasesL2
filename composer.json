@@ -25,7 +25,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
@@ -50,7 +50,13 @@
                 "type:drupal-core"
             ],
             "web/libraries/{$name}": [
-                "type:drupal-library"
+                "swagger-api/swagger-ui",
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "web/libraries/swagger-ui": [
+               "bower-asset/swagger-ui"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
@@ -72,9 +78,6 @@
             ],
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
-            ],
-            "var/www/html/web/libraries/swagger-ui-master/{$name}": [
-                "type:drupal-module"
             ]
         },
         "drupal-core-project-message": {
