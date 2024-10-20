@@ -18,7 +18,9 @@
         "composer/installers": "^2.0",
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
-        "drupal/core-recommended": "^10.3"
+        "drupal/core-recommended": "^10.3",
+        "drupal/swagger_ui_formatter": "^4.1",
+        "drupal/swagger_ui_info": "^1.3"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -70,6 +72,9 @@
             ],
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
+            ],
+            "var/www/html/web/libraries/swagger-ui-master/{$name}": [
+                "type:drupal-module"
             ]
         },
         "drupal-core-project-message": {

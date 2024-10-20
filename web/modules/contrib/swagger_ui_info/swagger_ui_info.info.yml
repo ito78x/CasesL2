@@ -1,0 +1,14 @@
+name: Swagger UI info
+description: Display info via Swagger UI.
+
+dependencies:
+  - swagger_ui_formatter
+
+type: module
+core_version_requirement: ^9.4 || ^10 || ^11
+configure: swagger_ui_info.admin_settings
+
+# Information added by Drupal.org packaging script on 2024-09-18
+version: '8.x-1.3'
+project: 'swagger_ui_info'
+datestamp: 1726666741
